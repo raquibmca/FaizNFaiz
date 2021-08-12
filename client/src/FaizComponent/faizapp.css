@@ -1,0 +1,166 @@
+.faiz-main {
+    width: 100%;
+    /* height: 100Vh; */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 75px auto;
+}
+
+.faiz-header {
+    grid-column: 1 / -1;
+    background: #fff;
+    /* background: rgb(37, 34, 77); */
+    /* margin-bottom: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 15px;
+    color: #000;
+    position: sticky;
+    box-shadow: 2px 2px 4px 0px lightgray;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.faiz-header-left {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-icon {
+    margin-right: 15px;
+    cursor: pointer;
+    /* position: relative; */
+}
+
+.home-comp-name {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.faiz-header-right{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.kart-icon {
+    font-size: 2rem;
+    margin-top: 5px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.home-cart-badge {
+    position: absolute;
+    top: -5px;
+    border-radius: 50%;
+    background: #000;
+    border: 1px solid rgb(236, 236, 236);
+    height: 30px;
+    width: 30px;
+    left: 20px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.faiz-content {
+    grid-column: 1 / -1;
+    margin: 10px 10px;
+}
+
+.faiz-footer {
+    grid-column: 1 / -1;
+    background:var(--sweetblue);
+    /* margin-top: 20px; */
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.faiz-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-rows: 280px;
+    grid-gap: 50px;
+}
+
+.faiz-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 2px;
+    box-shadow: 2px 2px 5px;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    position: relative;
+}
+
+.faiz-item-selected {
+    position: absolute;
+    font-size: 2rem;
+    top: -5px;
+    right: 5px;
+    height: 30px;
+    width: 30px;
+    color: rgb(7, 199, 0);
+}
+
+.faiz-item-selected i {
+    background: rgba(209, 133, 133, 0.0);
+}
+
+.faiz-item-img-container {
+    background: #ffffff;
+    height: 100%;
+    width: 100%;
+}
+
+.faiz-item-img{
+    height: 100%;
+    width: 100%;
+    mix-blend-mode: multiply;
+}
+
+.faiz-item:hover {
+    border: 1px solid lightgray
+}
+
+.faiz-item-body {
+    height: 80%;
+    width: 100%;
+    background: #fff;
+}
+
+.faiz-item-body-name {
+    width: 100%;
+    font-size: 1rem;
+    color: black;
+    border-radius: 3px;
+}
+
+.faiz-item-request {
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.faiz-item-request button {
+    width: 95%;
+    font-size: 0.7rem;
+}

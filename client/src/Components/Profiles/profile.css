@@ -1,0 +1,114 @@
+.userprofile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+    width: 100%;
+}
+
+.usp-header {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 35px;
+}
+
+.usp-image { 
+    width: 150px;
+    position: relative;
+}
+
+.userImage {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid lightgray;
+}
+
+
+.imguploadbtn {
+    position: absolute;
+    border-radius: 50%;
+    top: 85px;
+    left: 100px;
+    background: transparent;
+    font-size: 40px;
+    cursor: pointer;
+    color: var(--main-color);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imguploadbtn.disabled {
+    color: gray;
+    cursor: default;
+}
+
+.usp-otherlinks { 
+    flex: 2;
+    width: 100%;
+}
+
+.usp-link {
+    margin-top: 0px;
+    cursor: pointer;
+    /* font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.05em; */
+}
+
+.usp-link a{
+    font-size:var(--sys-label-text-size);
+    font-weight: lighter;
+    letter-spacing: 0.02em;
+    color: var(--text-control-label);
+}
+
+.usp-link .disabled { 
+    color: #c5c5c5;
+    cursor: default
+}
+
+
+.usp-profiledeatail {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+}
+
+.gendergrp {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.gendergrprow {
+    width: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+/* .hint {
+    margin-bottom: 16px;
+    width: 100%;
+    font-size: 18px;
+    height: 35px;
+} */
+
+.user-profile-group {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+
+.user-profile-group div {
+    margin-right: 10px;
+}

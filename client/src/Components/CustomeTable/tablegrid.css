@@ -1,0 +1,119 @@
+.grid-table-body {
+     /* margin-top: 5px; */
+     width: 100%;
+     /* min-height: calc(100vh - 400px ); */
+     min-height: 200px;
+     /* border-bottom: 2px solid black; */
+     overflow: auto;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: flex-start;
+     position: relative;
+     margin-bottom: 20px;
+     border: 1px solid lightgray;
+}
+
+.grid-table-body.pagging { 
+     max-height: 200px;
+}
+
+.custom-grid-table { 
+     width: 100%;
+     border-collapse: collapse; 
+     border-spacing: 0.3em 0.3em;
+     table-layout: fixed;
+}
+
+.custom-grid-table tbody tr:nth-child(odd) {
+     background-color:#ffffff;
+}
+.custom-grid-table tbody tr:nth-child(even) {
+     background-color:#fafafa;
+}
+
+.custom-grid-table tbody tr td {
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+     /* padding: 0px 15px; */
+}
+
+.custom-grid-table tbody tr:hover {
+     background:#81e6ff;
+}
+
+.custom-grid-table tbody tr.active {
+     background: #2dd5ff;
+     box-shadow: none;
+     border: 1px solid #2dd5ff;
+}
+
+.custom-grid-table thead tr td {
+     font-size: 1rem;
+     background: var(--main-color);/*rgb(250, 250, 250);*/
+     /* height: 40px; */
+     border-bottom: 2px solid lightgray;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+     color: white;
+     /* padding: 0px 10px; */
+}
+
+
+.custom-grid-table thead {
+     position: sticky;
+     top: 0;
+     width: 100%;
+     height: 40px;
+}
+
+.custom-grid-table tbody tr {
+     text-align: left;
+     cursor: pointer;
+}
+
+.custome-grid__orderdelete {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.custome-grid__orderdelete button {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.custome-grid__order-action {
+    margin-left: 10px;
+}
+
+.custom-grid__table-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    object-fit: cover;
+    border: 1px solid lightgray;
+}
+
+
+.custome-grid__normal-table {
+    width: 95%;
+    border-collapse: collapse; 
+    border-spacing: 0.0em 0.0em;
+    table-layout: fixed;
+    margin-top: 10px;
+}
+
+.custome-grid__normal-table thead tr {
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    background: #f9f9f9;
+}

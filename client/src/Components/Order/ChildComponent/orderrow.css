@@ -1,0 +1,27 @@
+.orderrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 10px;
+}
+
+.orderdelete {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.orderdelete button {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.order-action {
+    margin-left: 10px;
+}

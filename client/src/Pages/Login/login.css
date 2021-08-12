@@ -1,0 +1,136 @@
+.loginpanel {
+  height: 100vh;
+  background: linear-gradient(69deg, #676767, #000000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginpanelWrapper {
+  height: 50%;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #acabab, white);
+  position: relative;
+}
+
+.loader-pos {
+  position: absolute;
+  top: 0px;
+}
+
+.loginpanelWrapperRegister {
+  height: 75%;
+}
+
+.login{
+    height: 100%;
+    width: 99%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1rem;
+}
+
+.inputbox::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--text-placeholder);
+  opacity: 1; /* Firefox */
+  font-size: 25px;
+}
+
+.inputbox:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-size: 25px;
+  color: var(--text-placeholder);
+}
+
+.inputbox::-ms-input-placeholder { /* Microsoft Edge */
+  font-size: 25px;
+  color: var(--text-placeholder);
+}
+
+.inputbox{
+    color: black;
+    height: 3rem;
+    width: 100%;
+    border: transparent;
+    font-weight: bold;
+    text-decoration: none;
+    outline: none;
+    padding: 10px;
+    background: transparent;
+    border-bottom: 2px solid gray;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+.inputbox:focus{
+    outline: none;
+    color: black;
+}
+
+.loginButton{
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.loginButton:focus{
+  outline: none;
+}
+
+.loginButton:disabled{
+  cursor: not-allowed;
+}
+
+.loginForgot{
+    text-align: center;
+    color: #1775ee;
+    cursor: pointer;
+}
+
+.errMessage{ 
+    color: #ff5438; 
+    text-align: center; 
+    height: 20px;
+}
+
+.ok-message + input[name=username]{ 
+    /* color: #99db2e; 
+    text-align: center; 
+    height: 20px;
+    font-size: 2rem;
+    font-weight: bolder;
+     */
+     border-bottom-color: #99db2e;
+}
+
+.login input {
+    font: small-caption;
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .inputbox,
+  .errMessage {
+      font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .inputbox,
+  .errMessage {
+      font-size: 18px;
+  }
+  .loginpanelWrapper {
+    width: 85%;
+  }
+}

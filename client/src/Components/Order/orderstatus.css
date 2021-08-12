@@ -1,0 +1,65 @@
+.order-status-main {
+     position: relative;
+     /* user-select: none; */
+}
+
+.orderstatustable { 
+     width: 100%;
+     border-collapse: collapse; 
+     border-spacing: 0.3em 0.3em;
+     table-layout: fixed;
+     flex: 20;
+}
+
+.orderstatustable tbody tr:nth-child(odd) {
+     background-color:#ffffff;
+}
+.orderstatustable tbody tr:nth-child(even) {
+     background-color:#fafafa;
+}
+.orderstatustable tbody tr td {
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+     padding: 0px 15px;
+}
+.orderstatustable thead tr td {
+     font-size: 1rem;
+     background: var(--main-color);/*rgb(250, 250, 250);*/
+     height: 40px;
+     border-bottom: 2px solid lightgray;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+     color: white;
+     padding: 0px 10px;
+}
+
+.orderstatustable tbody tr {
+     text-align: left;
+     height: 45px;
+     cursor: pointer;
+}
+
+.orderstatustable tbody tr td:nth-child(1) {
+    font-family: monospace;
+}
+
+.order-search-panel {
+     display: none;
+     position: absolute;
+     top: 40px;
+     right: 2px;
+     width: 240px;
+     display: flex;
+     flex-direction: column;
+     align-items: baseline;
+     justify-content: center;
+     background: rgba(239, 239, 239, 0.9);
+     box-shadow: -4px 6px 4px gray;
+     border: 1px solid whitesmoke;
+     border-radius: 5px;
+     backdrop-filter: blur(1.5px);
+     padding: 10px;
+     margin-bottom: 10px;
+}
